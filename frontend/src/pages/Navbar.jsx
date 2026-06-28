@@ -1,17 +1,10 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-
 import { getStoredUser } from '../utils/authStorage'
 
 const Navbar = () => {
   const navigate = useNavigate()
   const user = getStoredUser()
-=======
-
-const Navbar = () => {
-  const navigate = useNavigate()
-  const user = JSON.parse(localStorage.getItem('adflowUser') || 'null')
-
 
   const logout = () => {
     localStorage.removeItem('adflowUser')
@@ -37,5 +30,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
