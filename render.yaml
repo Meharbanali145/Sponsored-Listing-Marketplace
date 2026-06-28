@@ -32,6 +32,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
+        value:  https://adflow-pro-api.onrender.com/api
         sync: false   # set to https://adflow-pro-api.onrender.com/api
     routes:
       - type: rewrite
