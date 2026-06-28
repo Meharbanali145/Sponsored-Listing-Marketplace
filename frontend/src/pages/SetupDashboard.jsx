@@ -1,11 +1,18 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from '../utils/api'
+<<<<<<< HEAD
 import { getStoredUser } from '../utils/authStorage'
 
 const SetupDashboard = () => {
   const navigate = useNavigate()
   const user = getStoredUser()
+=======
+
+const SetupDashboard = () => {
+  const navigate = useNavigate()
+  const user = JSON.parse(localStorage.getItem('adflowUser') || 'null')
+>>>>>>> 8c3c81f3521e853ef147c4816dd9e7f4c7ae4e98
   const [message, setMessage] = useState('')
   const [packageForm, setPackageForm] = useState({ name: '', durationDays: '', weight: '', price: '', benefits: '', isFeatured: false })
   const [categoryName, setCategoryName] = useState('')

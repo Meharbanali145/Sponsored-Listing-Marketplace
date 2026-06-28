@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import api from '../utils/api'
+<<<<<<< HEAD
 import { getStoredUser } from '../utils/authStorage'
 
 const ClientDashboard = () => {
   const user = getStoredUser()
+=======
+
+const ClientDashboard = () => {
+  const user = JSON.parse(localStorage.getItem('adflowUser') || 'null')
+>>>>>>> 8c3c81f3521e853ef147c4816dd9e7f4c7ae4e98
   const [meta, setMeta] = useState({ packages: [], categories: [], cities: [] })
   const [ads, setAds] = useState([])
   const [message, setMessage] = useState('')

@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import api from '../utils/api'
+<<<<<<< HEAD
 import { getStoredUser } from '../utils/authStorage'
 
 const AdminDashboard = () => {
   const user = getStoredUser()
+=======
+
+const AdminDashboard = () => {
+  const user = JSON.parse(localStorage.getItem('adflowUser') || 'null')
+>>>>>>> 8c3c81f3521e853ef147c4816dd9e7f4c7ae4e98
   const [tab, setTab] = useState('payments')
   const [payments, setPayments] = useState([])
   const [publishAds, setPublishAds] = useState([])
