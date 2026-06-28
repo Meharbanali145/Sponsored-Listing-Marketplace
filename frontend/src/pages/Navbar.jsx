@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-<<<<<<< HEAD
+
 import { getStoredUser } from '../utils/authStorage'
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
 const Navbar = () => {
   const navigate = useNavigate()
   const user = JSON.parse(localStorage.getItem('adflowUser') || 'null')
->>>>>>> 8c3c81f3521e853ef147c4816dd9e7f4c7ae4e98
+
 
   const logout = () => {
     localStorage.removeItem('adflowUser')
