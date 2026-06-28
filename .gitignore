@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# env files (NEVER PUSH)
+.env
+backend/.env
+backend/src/.env
+frontend/.env
+frontend/src/.env
+
+# logs
+*.log
+.npm-cache/
+
+# builds
+frontend/dist/
+frontend/build/
+backend/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
