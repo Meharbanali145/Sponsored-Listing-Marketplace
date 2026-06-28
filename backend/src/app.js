@@ -6,7 +6,7 @@ const { clientUrl } = require("./config");
 const app = express();
 
 const allowedOrigins = [
-  clientUrl,
+  clientUrl: process.env.CLIENT_URL || 'https://sponsored-listing-marketplace-1.onrender.com',
   "http://localhost:5173",
   "http://127.0.0.1:5173",
   "http://localhost:4173",
